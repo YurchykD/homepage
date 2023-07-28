@@ -2,139 +2,596 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Résumé</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./src/fonts/font_awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Resume</title>
 </head>
 
-<body>
-  <main>
-    <div class="resume">
+<body class="page">
+  <!--#region nav -->
+  <nav class="nav" id="Nav">
+    <ul class="nav__menu">
+      <li class="nav__menu-item">
+        <a href="#Resume">Resume</a>
+      </li>
+      <li class="nav__menu-item">
+        <a class="nav__menu-item-link" href="#">My Works</a>
+        <ul class="nav__menu-item-submenu">
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://yurchykd.github.io/layout_miami/">
+              Landing Miami
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://yurchykd.github.io/landing_theater/">
+              Landing Theater
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://yurchykd.github.io/Museum/">
+              Landing Museum
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://yurchykd.github.io/galaxy_promo/">
+              Landing Samsung
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://yurchykd.github.io/landing_computer_courses/">
+              Landing Computer courses
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__menu-item">
+        <a class="nav__menu-item-link" href="#">
+          Contact
+        </a>
+        <ul class="nav__menu-item-submenu">
+          <li>
+            <a href="tel:+380957274346">
+              +38 095 727 43 46
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__menu-item">
+        <a class="nav__menu-item-link" href="#">
+          Social media
+        </a>
+        <ul class="nav__menu-item-submenu">
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ya_dimchik_ya/?hl=ru">
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100005309050601">
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://t.me/people_are_strange">
+              Telegram
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.utest.com/profile/mongo/about">
+              uTest Profile
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!--#endregion -->
 
-      <div class="container">
-        <div class="resume__block">
-          <h1 class="contact-info__header">Bulka</h1>
-          <h3 class="contact-info__sub-header">Senior Hooman Manager</h3>
-
-          <div class="contact_info_container fh">
-            <div class="contact-info__block"></div>
-
-            <div class="contact-info__block contact-info__block--center">
-              <img class="contact-info__avatar" src="assets/bulka.png" width="200" height="200" alt="Avatar">
-            </div>
-
-            <div class="contact-info__block">
-              <a href="" rel="author" class="contact-info__item">
-                <div class="contact-info__item-icon-wrapper">
-                  <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                    <path
-                      d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
-                    </path>
-                  </svg>
-                </div>
-                <span>Lviv, Ukraine</span>
-              </a>
-
-              <a href="https://ua.linkedin.com/company/binary-studio_241166" rel="author" class="contact-info__item">
-                <div class="contact-info__item-icon-wrapper">
-                  <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path
-                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
-                    </path>
-                  </svg>
-                </div>
-                <span>binary-studio</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="resume__block">
-          <div class="intro">
-            <div class="intro__icon-wrapper">
-              <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64">
-                <path
-                  d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
-                </path>
-              </svg>
-            </div>
-            <p class="intro_text">Meow.
-              I am a Binary Studio cat. Still got 7 lives. Work in IT, Full Stack Evil,
-              all I do is sleep and try to help out hoomans with their projects whenever
-              they need me.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="resume__block">
-          <div class="skills">
-            <h3 class="skills__header">Skills</h3>
-            <p class="skills__text">Sleep, eat, more sleep, meow, mrrr, purr. </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="resume__block">
-          <div class="main-info fh">
-
-            <div class="experiences">
-              <h3 class="experiences__header">Experience</h3>
-              <div class="experiences__company">
-                <div class="experiences__company-header">
-                  <span class="experiences__company-header-durability">For whole my life</span>
-                  <h3 class="experiences__company-header-name">BinaryStudio</h3>
-                </div>
-
-                <div class="experiences__company-project">
-                  <span class="experiences__company-project-role">Binary Studio Cat</span>
-                  <h3 class="experiences__company-project-name">Hooman project</h3>
-                  <ul class="experiences__company-project-responsibilities">
-                    <li>Supported hoomans</li>
-                    <li>Slept all the time</li>
-                    <li>Lied on the keyboard</li>
-                    <li>Watched my hoomans working</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="additional-info fv">
-            <div class="additional-info fv">
-              <div class="additional-info__education">
-                <h3 class="additional-info__education-header">Education</h3>
-                <div class="additional-info__education-university">
-                  <span class="additional-info__education-university-durability">2021</span>
-                  <h3 class="additional-info__education-university-speciality">Cat track</h3>
-                  <p class="additional-info__education-university-name">Binary Studio Academy</p>
-                </div>
-              </div>
-
-              <div class="additional-info__languages">
-                <h3 class="additional-info__languages-header">Languages</h3>
-                <p class="additional-info__languages-item">
-                  Meow dialect
-                </p>
-                <p class="additional-info__languages-item">
-                  Ukrainian (understand)
-                </p>
-                <p class="additional-info__languages-item">
-                  English (don't understand)
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
+  <!--#region navPhone -->
+  <div class="navPhone">
+    <div class="navPhone__container">
+      <div class="navPhone__hamburger"></div>
+      <a href="#Resume" class="navPhone__title">
+        Resume
+      </a>
     </div>
-  </main>
+  </div>
+  <!--#endregion -->
+
+  <!--#region menu -->
+  <ul class="menu">
+    <div class="menu__hamburger"></div>
+    <li class="menu__item">
+      <a href="#Resume" class="menu__link">
+        Resume
+      </a>
+    </li>
+    <li class="menu__item">
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/YurchykD?tab=repositories"
+        class="menu__link">
+        My Works
+      </a>
+    </li>
+    <li class="menu__item">
+      <a href="tel:+380957274346" class="menu__link">
+        +380957274346
+      </a>
+    </li>
+    <li class="menu__social">
+      <a href="https://www.facebook.com/profile.php?id=100005309050601" class="menu__social-link" target="_blank"
+        rel="noopener noreferrer">
+        <img src="./src/images/facebook.svg" alt="facebook logo" class="menu__social-img">
+      </a>
+      <a href="https://www.instagram.com/rusdramtheatre/?hl=ru" class="menu__social-link" target="_blank"
+        rel="noopener noreferrer">
+        <img src="./src/images/instagram.svg" alt="instagram logo" class="menu__social-img">
+      </a>
+      <a href="https://t.me/people_are_strange" class="menu__social-link" target="_blank" rel="noopener noreferrer">
+        <img src="./src/images/telegram.svg" alt="telegram" class="menu__social-img">
+      </a>
+    </li>
+  </ul>
+  <!--#endregion -->
+
+  <!--#region resume -->
+  <div class="resume" id="Resume">
+    <header class="header">
+      <h2 class="header__title">
+        Yurchyk Dmytro
+      </h2>
+      <div class="header__block">
+        <h3 class="header__block-title">
+          <!-- Trainee/Junior -->
+        </h3>
+        <p class="header__block-text">
+          <!-- - Obtain a position of  and master a new profession, with the
+                    possibility of professional and career growth. -->
+        </p>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section">
+        <img src="./src/images/resume_photo.png" alt="handsome man photo" class="section__photo">
+
+        <!--#region contacts -->
+        <h3 class="section__contact">
+          Contact Information
+        </h3>
+        <h4 class="section__name">
+          <i class="fa fa-home"></i>
+          Address
+        </h4>
+        <p class="section__text">
+          Kiev
+        </p>
+        <h4 class="section__name">
+          <i class="fa fa-phone"></i>
+          Phone Number
+        </h4>
+        <p class="section__text">
+          <a href="tel:+380957274346" class="section__text-link">
+            +380957274346
+          </a>
+        </p>
+        <h4 class="section__name">
+          <i class="fa fa-envelope"></i>
+          Email
+        </h4>
+        <p class="section__text">
+          <a href="mailto:yurchik.d.work@gmail.com" class="section__text-link">
+            yurchik.d.work@gmail.com
+          </a>
+        </p>
+        <h4 class="section__name">
+          <i class="fa fa-birthday-cake"></i>
+          Date of birth
+        </h4>
+        <p class="section__text">
+          15-08-1996
+        </p>
+        <h4 class="section__name">
+          <i class="fa fa-github"></i>
+          GitHub
+        </h4>
+        <p class="section__text">
+          <a href="https://github.com/YurchykD" class="section__text-link" target="_blank" rel="noopener noreferrer">
+            https://github.com/YurchykD
+          </a>
+        </p>
+        <h4 class="section__name">
+          <i class="fa fa-linkedin"></i>
+          LinkedIn
+        </h4>
+        <p class="section__text">
+          <a href="https://www.linkedin.com/in/dmytro-yurchyk-341b021b5/" class="section__text-link" target="_blank"
+            rel="noopener noreferrer">
+            https://www.linkedin.com/in/dmytro-yurchyk-341b021b5/
+          </a>
+        </p>
+        <h4 class="section__name">
+          <i class="fa fa-link"></i>
+          uTest Profile
+        </h4>
+        <p class="section__text">
+          <a href="https://www.utest.com/profile/mongo/about" class="section__text-link" target="_blank"
+            rel="noopener noreferrer">
+            https://www.utest.com/profile/mongo/about
+          </a>
+        </p>
+        <!--#endregion -->
+
+        <!--#region language -->
+        <h4 class="section__languages">
+          Languages
+        </h4>
+        <p class="section__item">
+          <i class="fa fa-flag"></i>
+          <strong>English</strong> - B2 Upper-Intermediate
+        </p>
+        <p class="section__item">
+          <i class="fa fa-flag"></i>
+          <strong>German</strong> - A2 Elementary
+        </p>
+        <p class="section__item">
+          <i class="fa fa-flag"></i>
+          <strong>Ukrainian</strong> - Native
+        </p>
+        <p class="section__item">
+          <i class="fa fa-flag"></i>
+          <strong>Russian</strong> - Advanced
+        </p>
+        <!--#endregion -->
+
+        <!--#region hobbies -->
+        <h4 class="section__hobbies">
+          Hobbies
+        </h4>
+        <p class="section__hobby">
+          &#10149;
+          Ping Pong
+        </p>
+        <p class="section__hobby">
+          &#10149;
+          Hiking
+        </p>
+        <p class="section__hobby">
+          &#10149;
+          Guitar
+        </p>
+        <p class="section__hobby section__hobby--margin">
+          &#10149;
+          Photo
+        </p>
+        <!--#endregion -->
+
+      </section>
+      <div class="block">
+
+        <div class="block__work">
+          <h3 class="block__name">
+            Work Experience
+          </h3>
+          <div class="block__container">
+            <h4 class="block__title">
+              QA Manual Trainee
+            </h4>
+            <span class="block__date">
+              Apr 2023 - Jun 2023
+            </span>
+          </div>
+          <p class="block__text">
+            GeeksForLess
+            <br>
+            Work on 2 projects, executing test cases, working with mentor
+          </p>
+        </div>
+
+        <div class="block__work">
+          <div class="block__container">
+            <h4 class="block__title">
+              QA Tester (Freelance)
+            </h4>
+            <span class="block__date">
+              Nov 2022 - Present
+            </span>
+          </div>
+          <p class="block__text">
+            uTest Platform
+            <br>
+            Execution of test cases, writing bug reports. Product testing, working with different clients
+          </p>
+        </div>
+
+        <div class="block__work">
+          <div class="block__container">
+            <h4 class="block__title">
+              Administrator
+            </h4>
+            <span class="block__date">
+              Jul 2019 - Mar 2021
+            </span>
+          </div>
+          <p class="block__text">
+            TSNAP, Podil district
+            <br>
+            Work with clients, with the legislation, conducting documentation.
+          </p>
+        </div>
+
+        <hr class="block__line">
+
+        <div class="block__education">
+          <h3 class="block__name">
+            Education
+          </h3>
+          <div class="block__container">
+            <h4 class="block__title">
+              Bachelor`s Degree
+            </h4>
+            <span class="block__date">
+              Sep 2013 - Jun 2017
+            </span>
+          </div>
+          <p class="block__text">
+            University of State Fiscal Service of Ukraine, Irpin
+            <br>
+            Subject Area - Law
+          </p>
+
+          <div class="block__container">
+            <h4 class="block__title">
+              Master Degree
+            </h4>
+            <span class="block__date">
+              Sep 2017 - Jun 2019
+            </span>
+          </div>
+          <p class="block__text">
+            State University of Telecommunications, Kiev
+            <br>
+            Subject Area - Cyber Security, Study Program - Information and cybernetic security
+          </p>
+        </div>
+
+        <hr class="block__line">
+
+        <div class="block__skills">
+          <h3 class="block__name">
+            Skills
+          </h3>
+          <div class="block__container">
+            <div class="block__hard">
+              <h4 class="block__hard-title">
+                Hard Skills:
+              </h4>
+              <div class="block__container block__container--media">
+                <p class="block__hard-skill">
+                  &nbsp; JavaScript
+                </p>
+                <div class="block__container-bar">
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level block__hard-level--unset"></span>
+                  <span class="block__hard-level block__hard-level--unset"></span>
+                  <span class="block__hard-level block__hard-level--unset"></span>
+                </div>
+              </div>
+              <div class="block__container block__container--media">
+                <p class="block__hard-skill">
+                  &nbsp; HTML5, CSS, SCSS
+                </p>
+                <div class="block__container-bar">
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level block__hard-level--unset"></span>
+                  <span class="block__hard-level block__hard-level--unset"></span>
+                </div>
+              </div>
+              <div class="block__container block__container--media">
+                <p class="block__hard-skill">
+                  &nbsp; Git/GitHub
+                </p>
+                <div class="block__container-bar">
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level block__hard-level--unset"></span>
+                  <span class="block__hard-level block__hard-level--unset"></span>
+                </div>
+              </div>
+              <div class="block__container block__container--media">
+                <p class="block__hard-skill">
+                  &nbsp; Test documentation
+                </p>
+                <div class="block__container-bar">
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level block__hard-level--unset"></span>
+                  <span class="block__hard-level block__hard-level--unset"></span>
+                </div>
+              </div>
+              <div class="block__container block__container--media">
+                <p class="block__hard-skill">
+                  &nbsp; Photoshop/Figma
+                </p>
+                <div class="block__container-bar">
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level block__hard-level--unset"></span>
+                  <span class="block__hard-level block__hard-level--unset"></span>
+                </div>
+              </div>
+              <div class="block__container block__container--media">
+                <p class="block__hard-skill">
+                  &nbsp; SQL
+                </p>
+                <div class="block__container-bar">
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level"></span>
+                  <span class="block__hard-level block__hard-level--unset"></span>
+                  <span class="block__hard-level block__hard-level--unset"></span>
+                  <span class="block__hard-level block__hard-level--unset"></span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="block__soft">
+              <h4 class="block__soft-title">
+                Soft Skills:
+              </h4>
+              <p class="block__soft-skill">
+                • Creative and critical thinking
+              </p>
+              <p class="block__soft-skill">
+                • Willingness and desire to learn
+              </p>
+              <p class="block__soft-skill">
+                • Responsibility and Discipline
+              </p>
+              <p class="block__soft-skill">
+                • Stress-resistance and Resilience
+              </p>
+              <p class="block__soft-skill">
+                • Social skills and Teamwork
+              </p>
+              <p class="block__soft-skill">
+                • Follow rules
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="block__line">
+
+        <div class="block__courses">
+          <h3 class="block__name">
+            Courses
+          </h3>
+          <div class="block__container">
+            <h4 class="block__title">
+              The Fundamentals of Software Testing
+            </h4>
+            <span class="block__date">
+              Feb 2022 - Mar 2022
+            </span>
+          </div>
+          <p class="block__text">
+            QATestLab Training Center
+            <br>
+            QA Engineer (Theory of software testing, Mantis, Trello, Jira, bug report)
+          </p>
+
+          <div class="block__container">
+            <h4 class="block__title">
+              Front-end developer
+            </h4>
+            <span class="block__date">
+              May 2021 - Jul 2021
+            </span>
+          </div>
+          <p class="block__text">
+            Mate Academy
+            <br>
+            Front-end part - (HTML, CSS, SCSS/SASS, Figma, JavaScript)
+          </p>
+
+          <div class="block__container">
+            <h4 class="block__title">
+              Software Functional Testing Online UA Program
+            </h4>
+            <span class="block__date">
+              Feb 2022 - July 2022
+            </span>
+          </div>
+          <p class="block__text">
+            EPAM University
+            <br>
+            Manual QA Testing - Theoretical knowledge and a little practical experience in writing
+            test documentation(Test plan, test case, cheklist), Jira, Postman.
+          </p>
+
+          <div class="block__container">
+            <h4 class="block__title">
+              English - From Elementary to Advanced (Part I)
+            </h4>
+            <span class="block__date">
+              Jun 2020 - Feb 2022
+            </span>
+          </div>
+          <p class="block__text">
+            Green Forest
+            <br>
+            Grammar and Communication part, B1, B2, C1(part1)
+          </p>
+
+          <div class="block__container">
+            <h4 class="block__title">
+              Java Test Automation Engineer
+            </h4>
+            <span class="block__date">
+              Nov 2022 - Present
+            </span>
+          </div>
+          <p class="block__text">
+            Solvd Inc.
+            <br>
+            Java, OOP, Automation frameworks
+          </p>
+        </div>
+
+        <hr class="block__line">
+
+        <div class="block__examples">
+          <h3 class="block__name block__name--margin">
+            Examples of work
+          </h3>
+          <a target="_blank" rel="noopener noreferrer" href="https://yurchykd.github.io/layout_miami/"
+            class="block__link">
+            •https://yurchykd.github.io/layout_miami/
+          </a>
+          <br>
+          <a target="_blank" rel="noopener noreferrer" href="https://yurchykd.github.io/Museum/" class="block__link">
+            •https://yurchykd.github.io/Museum/
+          </a>
+          <br>
+          <a target="_blank" rel="noopener noreferrer" href="https://yurchykd.github.io/landing_computer_courses/"
+            class="block__link">
+            •https://yurchykd.github.io/landing_computer_courses/
+          </a>
+          <br>
+          <a target="_blank" rel="noopener noreferrer" href="https://yurchykd.github.io/landing_theater/"
+            class="block__link">
+            •https://yurchykd.github.io/landing_theater/
+          </a>
+          <br>
+          <a target="_blank" rel="noopener noreferrer" href="https://yurchykd.github.io/galaxy_promo/"
+            class="block__link">
+            •https://yurchykd.github.io/galaxy_promo/
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!--#endregion -->
+  <a href="#Resume" class="button">
+    <strong class="button__arrow">
+      &#9650;
+    </strong>
+  </a>
+  <div class="footer">
+    &#169; Copyright
+  </div>
+
+  <script src="./src/js/index.js"></script>
 </body>
 
 </html>
